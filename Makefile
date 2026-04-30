@@ -61,3 +61,7 @@ dpkg: build
 	cp ./output/bulwark_passkey ./linux_pkg/bulwark-passkey/usr/bin/
 	dpkg-deb --build ./linux_pkg/bulwark-passkey
 	mv ./linux_pkg/bulwark-passkey.deb ./output/
+
+pacman: build
+	makepkg -s -D ./linux_pkg/archlinux/
+	mv ./linux_pkg/archlinux/bulwark-passkey-*-x86_64.pkg.tar.zst ./output/

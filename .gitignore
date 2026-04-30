@@ -3,3 +3,5 @@ output
 device.log
 main.log
 .DS_Store
+linux_pkg/archlinux/src
+linux_pkg/archlinux/pkg

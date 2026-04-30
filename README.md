@@ -26,5 +26,14 @@ go install github.com/golang/protobuf/protoc-gen-go@latest
 ### Building
 ```
 git clone https://github.com/kotsyubin/bulwark-passkey.git
-cd bulwark-passkey && make output-Linux && make dpkg
+cd bulwark-passkey
+if command -v pacman >/dev/null 2>&1 
+then
+    echo "Building for Arch Linux"
+    make pacman
+elif command -v dpkg >/dev/null 2>&1
+then
+    echo "Building for Debian"
+    make dpkg
+fi
 ```
