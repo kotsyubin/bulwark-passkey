@@ -4,7 +4,7 @@ go 1.18
 
 require (
 	github.com/bulwarkid/virtual-fido v0.2.1-beta.2.0.20230228002418-2ebf6ee06143
-	github.com/wailsapp/wails/v2 v2.3.1
+	github.com/wailsapp/wails/v2 v2.12.0
 	google.golang.org/protobuf v1.28.1
 )
 
