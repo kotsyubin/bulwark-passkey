@@ -8,7 +8,7 @@ license=('MIT')
 depends=('usbip' 'webkit2gtk-4.1')
 makedepends=('protobuf' 'pkgconf' 'glib2' 'gtk3' 'autogen' 'autoconf' 'm4' 'automake' 'npm')
 package() {
-    mkdir -p "${pkgdir}/usr/bin/bulwark_passkey"
-    cp ../../../output/bulwark_passkey "${pkgdir}/usr/bin/bulwark_passkey"
-    cp -r ../../../linux_pkg/bulwark-passkey/usr "${pkgdir}/usr"
+    mkdir -p "${pkgdir}/usr/bin/"
+    cp ../../../output/bulwark_passkey "${pkgdir}/usr/bin/bulwark-passkey"
+    cp -r ../../../linux_pkg/bulwark-passkey/usr/* "${pkgdir}/usr"
 }

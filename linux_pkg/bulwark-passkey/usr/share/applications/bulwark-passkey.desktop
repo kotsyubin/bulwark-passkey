@@ -1,7 +1,8 @@
 [Desktop Entry]
 Name=Bulwark Passkey
 Comment=Virtual FIDO Device
-Exec=bulwark_passkey
+Exec=bulwark-passkey
+Icon=/usr/share/icons/bulwark.svg
 Terminal=false
 X-MultipleArgs=false
 Type=Application
